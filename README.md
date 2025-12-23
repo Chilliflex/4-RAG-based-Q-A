@@ -19,7 +19,7 @@ conda activate venv/
 You need several libraries for the UI, LLM integration, and vector storage:
 
 ```bash
-pip install streamlit python-dotenv langchain-groq langchain-huggingface langchain-community faiss-cpu pypdf
+pip install -U streamlit langchain-core langchain-community langchain-text-splitters langchain-groq langchain-huggingface faiss-cpu python-dotenv
 
 ```
 
@@ -105,7 +105,7 @@ This function (`rag_chain`) defines the logic for answering questions.
 1. Place your PDFs in a folder named `research_papers`.
 2. Run the Streamlit app:
 ```bash
-streamlit run app.py
+streamlit run app_huggingfaceembedding.py
 
 ```
 
